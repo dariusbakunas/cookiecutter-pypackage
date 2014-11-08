@@ -24,6 +24,40 @@ Then:
 * Add the repo to your ReadTheDocs account + turn on the ReadTheDocs service hook.
 * Release your package the standard Python way. Here's a release checklist: https://gist.github.com/audreyr/5990987
 
+User Config
+-----------
+
+If you use Cookiecutter a lot, you'll find it useful to have a
+`.cookiecutterrc` file in your home directory like this:
+
+.. code-block:: yaml
+
+    default_context:
+        full_name: "Your FullName"
+        email: "Your email"
+        github_username: "Your github username"
+    cookiecutters_dir: "$HOME/my-custom-cookiecutters-dir/"
+    abbreviations:
+        pp: https://github.com/username/cookiecutter-pypackage.git
+        gh: https://github.com/{0}.git
+        bb: https://bitbucket.org/{0}
+
+Possible settings are:
+
+* default_context: A list of key/value pairs that you want injected as context
+  whenever you generate a project with Cookiecutter. These values are treated
+  like the defaults in `cookiecutter.json`, upon generation of any project.
+* cookiecutters_dir: Directory where your cookiecutters are cloned to when you
+  use Cookiecutter with a repo argument.
+* abbreviations: A list of abbreviations for cookiecutters. Abbreviations can
+  be simple aliases for a repo name, or can be used as a prefix, in the form
+  `abbr:suffix`. Any suffix will be inserted into the expansion in place of
+  the text `{0}`, using standard Python string formatting.  With the above
+  aliases, you could use the `cookiecutter-pypackage` template simply by saying
+  `cookiecutter pp`, or `cookiecutter gh:username/cookiecutter-pypackage`.
+  The `gh` (github) and `bb` (bitbucket) abbreviations shown above are actually
+  built in, and can be used without defining them yourself.
+
 Not Exactly What You Want?
 --------------------------
 
