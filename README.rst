@@ -4,6 +4,8 @@ cookiecutter-pypackage
 
 Cookiecutter template for a Python package.
 
+This is a fork from: https://github.com/audreyr/cookiecutter-pypackage
+
 * Free software: BSD license
 * Vanilla testing setup with `unittest` and `python setup.py test`
 * Travis-CI_: Ready for Travis Continuous Integration testing
