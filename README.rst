@@ -2,7 +2,7 @@
 cookiecutter-pypackage
 ======================
 
-Cookiecutter template for a Python package. See https://github.com/audreyr/cookiecutter.
+Cookiecutter template for a Python package.
 
 * Free software: BSD license
 * Vanilla testing setup with `unittest` and `python setup.py test`
@@ -15,7 +15,7 @@ Usage
 
 Generate a Python package project::
 
-    cookiecutter https://github.com/audreyr/cookiecutter-pypackage.git
+    cookiecutter https://github.com/dariusbakunas/cookiecutter-pypackage.git
 
 Then:
 
@@ -34,7 +34,7 @@ Similar Cookiecutter Templates
 
 * `Nekroze/cookiecutter-pypackage`_: A fork of this with a PyTest test runner,
   strict flake8 checking with Travis/Tox, and some docs and `setup.py` differences.
-  
+
 * `tony/cookiecutter-pypackage`_: Fork with py2.7+3.3 optimizations. Flask/Werkzeug-style
   test runner, ``_compat`` module and module/doc conventions. See ``README.rst`` or
   the `github comparison view`_ for exhaustive list of additions and modifications.
@@ -50,17 +50,10 @@ to create your own version. Or create your own; it doesn't strictly have to
 be a fork.
 
 * Once you have your own version working, add it to the Similar Cookiecutter
-  Templates list above with a brief description. 
+  Templates list above with a brief description.
 
 * It's up to you whether or not to rename your fork/own version. Do whatever
   you think sounds good.
-
-Or Submit a Pull Request
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-I also accept pull requests on this, if they're small, atomic, and if they
-make my own packaging experience better.
-
 
 .. _Travis-CI: http://travis-ci.org/
 .. _Tox: http://testrun.org/tox/
